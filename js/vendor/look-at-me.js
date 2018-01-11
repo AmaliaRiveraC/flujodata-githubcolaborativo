@@ -20,10 +20,16 @@
         result.innerHTML = listShow(students);
     };
 
-    
+    var searchEvent = function (e) {
+        e.preventDefault();
+        var students = search();
+        result.innerHTML = listShow(students);
+    };
+
+
 
     // Manejadores de eventos
     addBoton.addEventListener("click", addEvent);
     showBoton.addEventListener("click", showEvent);
-    
+
 }();

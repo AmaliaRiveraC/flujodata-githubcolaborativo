@@ -9,8 +9,22 @@ function studentAdd() {
     // TO DO: Preguntar al usuario por el nombre, puntos técnicos y puntos de HSE de un estudiante
     // Hint: El estudiante debe ser agregado a la lista de estudiantes
     // TO DO: Retornar el estudiante recientemente creado
-   
+    var name = prompt("¿Cuál es el nombre del estudiante? ");
+    var techPoints = parseInt(prompt("Ingresa los puntos tech"));
+    var hsePoints = parseInt(prompt("Ingresa los puntos HSE"));
+
+     var student = {
+       "nombre": name,
+       "puntos": techPoints,
+       "hse": hsePoints
+     }
+
+
+    console.log(student);
 }
+
+
+
 
 function show(student) {
     // TO DO: Completar el template para que muestre las propiedades correctas del estudiante
@@ -19,7 +33,7 @@ function show(student) {
     result += "<div class='col m12'>";
     result += "<div class='card blue-grey darken-1'>";
     result += "<div class='card-content white-text'>";
-    result += "<p><strong>Nombre:</strong> " + estudiante.nombre + "</p>";
+    result += "<p><strong>Nombre:</strong> " + estudiantes.nombre + "</p>";
     result += "<p><strong>Puntos Técnicos:</strong> " + estudiante.puntajeTecnico + "</p>";
     result += "<p><strong>Puntos HSE:</strong> " + estudiante.puntajeHse + "</p>";
     result += "</div>";
