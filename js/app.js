@@ -2,7 +2,7 @@ var students = [];
 
 function getStudentsList() {
     // TO DO: Retornar la lista de estudiantes
-    return students;
+   
 }
 
 function studentAdd() {
